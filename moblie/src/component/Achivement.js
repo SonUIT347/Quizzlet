@@ -32,8 +32,8 @@ const Achivement = () =>{
             return(
               <SafeAreaView style = {styles.lession} key={exam.id}>
                 <SafeAreaView style = {styles.acm_name_text}>
-                  <Text style={{fontSize:20, fontWeight:"bold", marginBottom: 3}} >{exam.name}</Text>
-                  <Text style={{width:60, borderRadius: 10, padding:3, backgroundColor:"#C4D0FB"}}>{exam.count + " tems"}</Text>
+                  <Text style={{fontSize:20, fontWeight:"bold", marginBottom: 3, color: "white",marginBottom:15}} >{exam.name}</Text>
+                  <Text style={{width:60, borderRadius: 10, padding:3, backgroundColor:"white", fontSize:10,paddingLeft:5,color:"red"}}>{exam.count + " tems"}</Text>
                 </SafeAreaView>
   
                 <Text style = {{top: 55, left:10, fontSize: 15}} >{exam.user_name}</Text>
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     lession:{
       height: 133,
       width: 258,
-      backgroundColor: "#FFFFFF",
+      backgroundColor: "#2E3856",
       borderRadius: 10,
       marginLeft:10,
       marginRight:10,
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
       height:50,
       //backgroundColor:"red",
       flexDirection:"column",
-      justifyContent:"space-around"
+      justifyContent:"space-between",
     }
   })
 
